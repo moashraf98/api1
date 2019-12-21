@@ -34,7 +34,7 @@ def get_store(name):
             return jsonify({'msg': 'store is not found'})
 
 
-@app.route('/')
+@app.route('/store')
 def get_stores():
     return jsonify({'stores': stores})
 
